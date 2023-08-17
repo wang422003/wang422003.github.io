@@ -1,84 +1,62 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{pmlr-v202-wang23ak,
+  abbr={ICML},
+  selected={true},
+  title =    {Effective and Efficient Structural Inference with Reservoir Computing},
+  author =       {Wang, Aoran and Tong, Tsz Pan and Pang, Jun},
+  booktitle =    {Proceedings of the 40th International Conference on Machine Learning},
+  pages =    {36391--36410},
+  year =   {2023},
+  volume =   {202},
+  series =   {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  pdf =    {https://proceedings.mlr.press/v202/wang23ak/wang23ak.pdf},
+  website =    {https://proceedings.mlr.press/v202/wang23ak.html},
+  abstract =   {In this paper, we present an effective and efficient structural inference approach by integrating a Reservoir Computing (RC) network into a Variational Auto-encoder-based (VAE-based) structural inference framework. With the help of Bi-level Optimization, the backbone VAE-based method follows the Information Bottleneck principle and infers a general adjacency matrix in its latent space; the RC net substitutes the partial role of the decoder and encourages the whole approach to perform further steps of gradient descent based on limited available data. The experimental results on various datasets including biological networks, simulated fMRI data, and physical simulations show the effectiveness and efficiency of our proposed method for structural inference, either with much fewer trajectories or with much shorter trajectories compared with previous works.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@inproceedings{pmlr-v202-wang23ac,
+  abbr={ICML},
+  selected={true},
+  title =    {Active Learning based Structural Inference},
+  author =       {Wang, Aoran and Pang, Jun},
+  booktitle =    {Proceedings of the 40th International Conference on Machine Learning},
+  pages =    {36224--36245},
+  year =   {2023},
+  volume =   {202},
+  series =   {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  pdf =    {https://proceedings.mlr.press/v202/wang23ac/wang23ac.pdf},
+  website =    {https://proceedings.mlr.press/v202/wang23ac.html},
+  abstract =   {In this paper, we propose a novel framework, Active Learning based Structural Inference (ALaSI), to infer the existence of directed connections from observed agents’ states over a time period in a dynamical system. With the help of deep active learning, ALaSI is competent in learning the representation of connections with a relatively small pool of prior knowledge. Moreover, based on information theory, the proposed inter- and out-of-scope message learning pipelines are remarkably beneficial to structural inference for large dynamical systems. We evaluate ALaSI on various large datasets including simulated systems and real-world networks, to demonstrate that ALaSI is able to outperform previous methods in precisely inferring the existence of connections in large systems under either supervised learning or unsupervised learning.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@inproceedings{aoran2022isidg,
+  abbr={NeurIPS},
+  selected={true},
+  author = {Wang, Aoran and Pang, Jun},
+  booktitle = {Advances in Neural Information Processing Systems},
+  pages = {8717--8730},
+  title = {Iterative Structural Inference of Directed Graphs},
+  website={https://papers.nips.cc/paper_files/paper/2022/hash/39717429762da92201a750dd03386920-Abstract-Conference.html},
+  pdf = {https://proceedings.neurips.cc/paper_files/paper/2022/file/39717429762da92201a750dd03386920-Paper-Conference.pdf},
+  volume = {35},
+  year = {2022},
+  abstract =   {In this paper, we propose a variational model, iterative Structural Inference of Directed Graphs (iSIDG), to infer the existence of directed interactions from observational agents’ features over a time period in a dynamical system. First, the iterative process in our model feeds the learned interactions back to encourage our model to eliminate indirect interactions and to emphasize directional representation during learning. Second, we show that extra regularization terms in the objective function for smoothness, connectiveness, and sparsity prompt our model to infer a more realistic structure and to further eliminate indirect interactions. We evaluate iSIDG on various datasets including biological networks, simulated fMRI data, and physical simulations to demonstrate that our model is able to precisely infer the existence of interactions, and is significantly superior to baseline models.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{9294630,
+  abbr={ITSC},
+  author={Hu, Haohao and Wang, Aoran and Sons, Marc and Lauer, Martin},
+  booktitle={2020 IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC)}, 
+  title={ViPNet: An End-to-End 6D Visual Camera Pose Regression Network}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.1109/ITSC45102.2020.9294630},
+  abstract={In this work, we present a visual pose regression network: ViPNet. It is robust and real-time capable on mobile platforms such as self-driving vehicles. We train a convolutional neural network to estimate the six degrees of freedom camera pose from a single monocular image in an end-to-end manner. In order to estimate camera poses with uncertainty, we use a Bayesian version of the ResNet-50 as our basic network. SEBlocks are applied in residual units to increase our model's sensitivity to informative features. Our ViPNet is trained using a geometric loss function with trainable parameters, which can simplify the fine-tuning process significantly. We evaluate our ViPNet on the Cambridge Landmarks dataset and also on our Karl-Wilhelm-Plaza dataset, which is recorded with an experimental vehicle. As evaluation results, our ViPNet outperforms other end-to-end monocular camera pose estimation methods. Our ViPNet requires only 9-15ms to predict one camera pose, which allows us to run it with a very high frequency.}
 }

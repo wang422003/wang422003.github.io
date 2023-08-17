@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Structural Inference
+description: Benchmarking structural inference methods for dynamical interacting systems.
+img: assets/img/Background_1.png
+redirect: https://structinfer.github.io/
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
 ---
 
 Every project has a beautiful feature showcase page.
