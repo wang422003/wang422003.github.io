@@ -2,79 +2,63 @@
   type: map
   contents:
     - name: Name
-      value: Joshua Veitch-Michaelis
+      value: Aoran Wang
     - name: Languages
-      value: English (Native), German (A1), Spanish (A2-B1)
+      value: Chinese (Native), English (B2), German (C1)
     - name: Pronouns
       value: He/Him
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Space and Climate Physics
-      institution: Mullard Space Science Laboratory, University College London
-      year: 2017
+    - title: PhD in Computer Science
+      institution: Faculty of Science, Technology and Medicine, University of Luxembourg, Luxembourg
+      year: 2024
       description:
-        - Fusion of LIDAR with stereo camera data - an assessment
-        - Supervised by Prof. Jan Peter Muller
-    - title: Bachelors/Masters in Physics (MPhys)
-      institution: University of Warwick
-      year: 1900
+        - Structural Inference for Dynamical Systems
+        - Network Science
+        - Graph Theory
+        - Supervised by Prof. Jun Pang
+    - title: Master of Science (MSc)
+      institution: Karlsruhe Institute of Technology, Germany
+      year: 2019
       description:
-        - First class honours
+        - Cognitive Systems
+        - Autonomous Driving
+    - title: Bachelor of Engineering (BEng)
+      institution: Tongji University, China
+      year: 2015
+      description:
+        - Mechanics and Dynamics
+        - Vehicle Engineering
+        - Graduated with Honors
+
 
 - title: Experience
   type: time_table
   contents:
-    - title: Postdoctoral Researcher in AI for remote sensing
-      institution: ETH Zurich, Switzerland
-      year: 2022 - 
+    - title: Graduate Assistant for Autonomous Driving
+      institution: Karlsruhe Institute of Technology, Germany
+      year: 2020 
       description:
-        - Developing machine learning algorithms for ecosystem conservation, based on remotely sensed data
-    - title: IceCube Winterover Experiments Operator
-      institution: Wisconsin-Madison University
-      year: 2020-2022
-      description:
-        - Operate and maintain the IceCube Neutrino Observatory at the South Pole, providing critical hardware and software support (on-call 24/7 year-round)
-    - title: Postdoctoral Researcher in Drone Image Analysis
-      institution: Liverpool John Moores University
-      year: 2018-2020
-      description:
-        - Led instrument design for a real-time, drone-mounted endangered species detection system using thermal/visible imaging and deep learning.
-        - Collaborations with Save The Elephants (Kenya), WWF, ZSL (London), Durrell (Madagascar) and Knowsley Safari.
-        - Development of an automatic spectral calibration pipeline for the 2m Liverpool Telescope
-    - title: Researcher
-      institution: Frontier Development Lab (Europe)
-      year: 2019
-      description:
-        - Worked on a team developing a flood segmentation algorithm for deployment on a satellite, supported by UNICEF and the European Space Agency (ESA). Selected from over 400 applicants.
-        - Research presented orally at Humanitarian Aid and Disaster Response workshop at NeurIPS 2019 (hadr.ai).
-        - Launched code on a D-Orbit satellite in June 2021 and is has been flight-tested in space.
-    - title: Computer Vision/Robotics Engineer
-      institution: I3D Robotics ltd 
+        - Developing cognitive and localization algorithms for self-drving cars, based on monocular camera inputs and deep learning.
+    - title: Research Intern
+      institution: Robert Bosch GmbH, Renningen, Germany
       year: 2018
       description:
-        - Designed bespoke 3D imaging systems; stereo, LIDAR, laser triangulation, high-speed image processing tools (> 400 fps).
-        - Led a successful InnovateUK-funded project for smart agriculture; an embedded system for deep learning-based fruit detection in greenhouses.
-        - Clients included robotics, heavy industry (steel), agriculture and nuclear.
-    - title: STFC CASE PhD Student; Photonics Engineer
-      institution: IS Instruments Ltd
-      year: 2013-2017
-      description:
-        - Led end-to-end design of a commercial IoT miniature spectrometer. Obtained UK government grant funding, PCB design and embedded firmware (Atmel AVR), optomechanical design and end-user software development.
-    
+        - Developing a novel system diagnosis concept for the propulsion system of an autonomous electric vehicle. 
+        - Design a detection process for the practical application for autonomous driving.
+
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2021
+    - year: 2023
       items: 
-        - Antarctica Service Medal (Wintered Over), National Science Foundation (USA)
-    - year: 2019
+        - ICML2023 Student Travel Grant
+    - year: 2022
       items: 
-        - Google Cloud Research Credit LJMU ($5k) to support research into RGB-Thermal data fusion for ecology
-    - year: 2017
+        - NeurIPS2022 Student Travel Grant
+    - year: 2015
       items:
-        - Remote Sensing and Photogrammetry Society (RSPSOC) award for best PhD thesis
-    - year: 2016
-      items:
-        - SIM Scholar, Worshipful Company of Scientific Instrument Makers. Postgraduate award for excellence in instrumentation research, nominated by UCL.
+        - Bachelor Graduation with Honors
+  

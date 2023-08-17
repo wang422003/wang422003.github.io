@@ -1,9 +1,5 @@
 github_users:
-  - jveitchmichaelis
+  - wang422003
 
 github_repos:
-  - LjmuAstroEcology/flirpy
-  - jveitchmichaelis/deeplabel
-  - jveitchmichaelis/rascal
-  - jveitchmichaelis/gotcha
-  - jveitchmichaelis/edgetpu-yolo
+  - wang422003/Benchmarking-Structural-Inference-Methods-for-Interacting-Dynamical-Systems

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Ecosystem Monitoring
-description: Applying ML to better understand ecosystem restoration.
-img: assets/img/forest_crop.png
-redirect: https://restor.eco
+title: Structural Inference
+description: Benchmarking structural inference methods for dynamical interacting systems.
+img: assets/img/Background_1.png
+redirect: https://structinfer.github.io/
 importance: 1
 category: work
 ---

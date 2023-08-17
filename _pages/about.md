@@ -1,20 +1,21 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: I'm a computer vision engineer interested in instrumentation and applying machine learning for social good.
+subtitle: I'm a PhD Student interested in structural inference with machine learning. Let's discover the interactions!
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>ETH STF Building</p>
-    <p>Stampfenbachstrasse 114</p>
-    <p>8092 Zürich</p>
+    <p>E03-0325-090</p>
+    <p>Maison du Nombre</p>
+    <p>6, avenue de la Fonte</p>
+    <p>L-4364 Esch-sur-Alzette</p>
 
 news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 

@@ -3,6 +3,7 @@
 
 @inproceedings{pmlr-v202-wang23ak,
   abbr={ICML},
+  selected={true},
   title =    {Effective and Efficient Structural Inference with Reservoir Computing},
   author =       {Wang, Aoran and Tong, Tsz Pan and Pang, Jun},
   booktitle =    {Proceedings of the 40th International Conference on Machine Learning},
@@ -10,16 +11,16 @@
   year =   {2023},
   volume =   {202},
   series =   {Proceedings of Machine Learning Research},
-  month =    {23--29 Jul},
   publisher =    {PMLR},
   pdf =    {https://proceedings.mlr.press/v202/wang23ak/wang23ak.pdf},
-  url =    {https://proceedings.mlr.press/v202/wang23ak.html},
+  website =    {https://proceedings.mlr.press/v202/wang23ak.html},
   abstract =   {In this paper, we present an effective and efficient structural inference approach by integrating a Reservoir Computing (RC) network into a Variational Auto-encoder-based (VAE-based) structural inference framework. With the help of Bi-level Optimization, the backbone VAE-based method follows the Information Bottleneck principle and infers a general adjacency matrix in its latent space; the RC net substitutes the partial role of the decoder and encourages the whole approach to perform further steps of gradient descent based on limited available data. The experimental results on various datasets including biological networks, simulated fMRI data, and physical simulations show the effectiveness and efficiency of our proposed method for structural inference, either with much fewer trajectories or with much shorter trajectories compared with previous works.}
 }
 
 
 @inproceedings{pmlr-v202-wang23ac,
   abbr={ICML},
+  selected={true},
   title =    {Active Learning based Structural Inference},
   author =       {Wang, Aoran and Pang, Jun},
   booktitle =    {Proceedings of the 40th International Conference on Machine Learning},
@@ -29,19 +30,22 @@
   series =   {Proceedings of Machine Learning Research},
   publisher =    {PMLR},
   pdf =    {https://proceedings.mlr.press/v202/wang23ac/wang23ac.pdf},
-  url =    {https://proceedings.mlr.press/v202/wang23ac.html},
+  website =    {https://proceedings.mlr.press/v202/wang23ac.html},
   abstract =   {In this paper, we propose a novel framework, Active Learning based Structural Inference (ALaSI), to infer the existence of directed connections from observed agents’ states over a time period in a dynamical system. With the help of deep active learning, ALaSI is competent in learning the representation of connections with a relatively small pool of prior knowledge. Moreover, based on information theory, the proposed inter- and out-of-scope message learning pipelines are remarkably beneficial to structural inference for large dynamical systems. We evaluate ALaSI on various large datasets including simulated systems and real-world networks, to demonstrate that ALaSI is able to outperform previous methods in precisely inferring the existence of connections in large systems under either supervised learning or unsupervised learning.}
 }
 
 @inproceedings{aoran2022isidg,
   abbr={NeurIPS},
+  selected={true},
   author = {Wang, Aoran and Pang, Jun},
   booktitle = {Advances in Neural Information Processing Systems},
   pages = {8717--8730},
   title = {Iterative Structural Inference of Directed Graphs},
-  url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/39717429762da92201a750dd03386920-Paper-Conference.pdf},
+  website={https://papers.nips.cc/paper_files/paper/2022/hash/39717429762da92201a750dd03386920-Abstract-Conference.html},
+  pdf = {https://proceedings.neurips.cc/paper_files/paper/2022/file/39717429762da92201a750dd03386920-Paper-Conference.pdf},
   volume = {35},
-  year = {2022}
+  year = {2022},
+  abstract =   {In this paper, we propose a variational model, iterative Structural Inference of Directed Graphs (iSIDG), to infer the existence of directed interactions from observational agents’ features over a time period in a dynamical system. First, the iterative process in our model feeds the learned interactions back to encourage our model to eliminate indirect interactions and to emphasize directional representation during learning. Second, we show that extra regularization terms in the objective function for smoothness, connectiveness, and sparsity prompt our model to infer a more realistic structure and to further eliminate indirect interactions. We evaluate iSIDG on various datasets including biological networks, simulated fMRI data, and physical simulations to demonstrate that our model is able to precisely infer the existence of interactions, and is significantly superior to baseline models.}
 }
 
 @inproceedings{9294630,
@@ -53,4 +57,6 @@
   volume={},
   number={},
   pages={1-7},
-  doi={10.1109/ITSC45102.2020.9294630}}
+  doi={10.1109/ITSC45102.2020.9294630},
+  abstract={In this work, we present a visual pose regression network: ViPNet. It is robust and real-time capable on mobile platforms such as self-driving vehicles. We train a convolutional neural network to estimate the six degrees of freedom camera pose from a single monocular image in an end-to-end manner. In order to estimate camera poses with uncertainty, we use a Bayesian version of the ResNet-50 as our basic network. SEBlocks are applied in residual units to increase our model's sensitivity to informative features. Our ViPNet is trained using a geometric loss function with trainable parameters, which can simplify the fine-tuning process significantly. We evaluate our ViPNet on the Cambridge Landmarks dataset and also on our Karl-Wilhelm-Plaza dataset, which is recorded with an experimental vehicle. As evaluation results, our ViPNet outperforms other end-to-end monocular camera pose estimation methods. Our ViPNet requires only 9-15ms to predict one camera pose, which allows us to run it with a very high frequency.}
+}
