@@ -2,4 +2,6 @@ github_users:
   - wang422003
 
 github_repos:
+  - ai-for-edu/Evaluating-Large-Language-Models-with-Educational-Knowledge-Graphs-on-Prerequisite-Relationships
   - wang422003/Benchmarking-Structural-Inference-Methods-for-Interacting-Dynamical-Systems
+  - wang422003/SIDEC_torch

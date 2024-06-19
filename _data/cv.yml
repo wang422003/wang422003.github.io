@@ -41,13 +41,39 @@
       institution: Karlsruhe Institute of Technology, Germany
       year: 2020 
       description:
-        - Developing cognitive and localization algorithms for self-drving cars, based on monocular camera inputs and deep learning.
+        - Engineered an innovative visual localization technique using Graph Neural Networks and OpenCV to enhance the precision of monocular camera-based navigation in autonomous vehicles.
+        - Successfully presented and published the outcomes of the visual localization research in a peer-reviewed conference.
+        - Investigated combinatorial approaches to hierarchical visual localization, broadening the scope of research and uncovering potential advancements in the domain.
     - title: Research Intern
       institution: Robert Bosch GmbH, Renningen, Germany
       year: 2018
       description:
-        - Developing a novel system diagnosis concept for the propulsion system of an autonomous electric vehicle. 
-        - Design a detection process for the practical application for autonomous driving.
+        - Organized and delivered a tutorial on AUTOSAR for the research team, initiated communication with the director.
+        - Pioneered the development of a diagnosis system using an extended Kalman filter for an autonomous electric vehicle prototype’s electric propulsion system.
+        - Explored the integration of modern AI methods into self-driving cars for diagnostic purposes.
+
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Structural Inference (AI4Science)
+      year: 2020 - now
+      description:
+        - Structure inference of dynamcial systems from observational trajectories.
+        - Dealing with real-world challenge such as data irregularity and incomplete observations.
+        - Created StructInfer, a pioneering open benchmark for evaluating structural inference methods across disciplines, ensuring objectivity and reproducibility.
+        - Published research at premier AI conferences including NeurIPS 2022, ICML 2023, and ICLR 2024, and contributed as a reviewer at leading AI venues.
+    - title: AI4EDU
+      year: 2024 - Now
+      description:
+        - Developed models for recommendation systems using spatio-temporal graphs, enhancing them with integrated database solutions.
+        - Innovated techniques for addressing missing data issues by leveraging spatio-temporal similarities.
+        - Launched the LLM4EDUKG benchmark, assessing the reasoning capabilities of pre-trained large language models on domain-specific knowledge graphs.
+
+- title: Academic Services
+  type: list
+  contents:
+    - Conferece Reviewer - ICML2022, SPIGM@ICML2023, NeurIPS2023, ICLR2024, ICML2024, IJCAI2024, AI4Science@ICML2024, ML4LMS@ICML2024, NeurIPS2024, NeurIPS2024 D&B Track
 
 - title: Honors and Awards
   type: time_table
