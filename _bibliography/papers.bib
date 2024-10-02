@@ -1,11 +1,44 @@
 ---
 ---
-@inproceedings{pmlr-v202-wang23ak,
+@inproceedings{wang2024sicsm,
+  abbr={NeurIPS},
+  selected={true},
+  title={Structural Inference of Dynamical Systems with Conjoined State Space Models},
+  author={Wang, Aoran and Pang, Jun},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year={2024},
+  website={https://openreview.net/forum?id=xQWJBeK5rh},
+  abstract={This paper introduces SICSM, a novel structural inference framework that integrates Selective State Space Models (selective SSMs) with Generative Flow Networks (GFNs) to handle the challenges posed by dynamical systems with irregularly sampled trajectories and partial observations. By utilizing the robust temporal modeling capabilities of selective SSMs, our approach learns input-dependent transition functions that adapt to non-uniform time intervals, thereby enhancing the accuracy of structural inference. By aggregating dynamics across diverse temporal dependencies and channeling them into the GFN, the SICSM adeptly approximates the posterior distribution of the system's structure. This process not only enables precise inference of complex interactions within partially observed systems but also ensures the seamless integration of prior knowledge, enhancing the model’s accuracy and robustness. Extensive evaluations on sixteen diverse datasets demonstrate that SICSM outperforms existing methods, particularly in scenarios characterized by irregular sampling and incomplete observations, which highlight its potential as a reliable tool for scientific discovery and system diagnostics in disciplines that demand precise modeling of complex interactions.}
+}
+
+@inproceedings{wang2024benchmarking,
+  abbr={NeurIPS},
+  selected={true},
+  title={Benchmarking Structural Inference Methods for Interacting Dynamical Systems with Synthetic Data},
+  author={Wang, Aoran and Tong, Tsz Pan and Mizera, Andrzej and Pang, Jun},
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2024},
+  website={https://openreview.net/forum?id=kKtalvwqBZ},
+  abstract={Understanding complex dynamical systems begins with identifying their topological structures, which expose the organization of the systems. This requires robust structural inference methods that can deduce structure from observed behavior. However, existing methods are often domain-specific and lack a standardized, objective comparison framework. We address this gap by benchmarking 13 structural inference methods from various disciplines on simulations representing two types of dynamics and 11 interaction graph models, supplemented by a biological experimental dataset to mirror real-world application. We evaluated the methods for accuracy, scalability, robustness, and sensitivity to graph properties. Our findings indicate that deep learning methods excel with multi-dimensional data, while classical statistics and information theory based approaches are notably accurate and robust. Additionally, performance correlates positively with the graph's average shortest path length. This benchmark should aid researchers in selecting suitable methods for their specific needs and stimulate further methodological innovation.}
+}
+
+@article{tong2024integrating,
+  abbr={Arxiv},
+  title={Integrating Optimal Transport and Structural Inference Models for GRN Inference from Single-cell Data},
+  author={Tong, Tsz Pan and Wang, Aoran and Panagopoulos, George and Pang, Jun},
+  journal={arXiv preprint arXiv:2409.15080},
+  year={2024},
+  pdf = {https://arxiv.org/pdf/2409.15080},
+  abstract = {We introduce a novel gene regulatory network (GRN) inference method that integrates optimal transport (OT) with a deep-learning structural inference model. Advances in next-generation sequencing enable detailed yet destructive gene expression assays at the single-cell level, resulting in the loss of cell evolutionary trajectories. Due to technological and cost constraints, single-cell experiments often feature cells sampled at irregular and sparse time points with a small sample size. Although trajectory-based structural inference models can accurately reveal the underlying interaction graph from observed data, their efficacy depends on the inputs of thousands of regularly sampled trajectories. The irregularly-sampled nature of single-cell data precludes the direct use of these powerful models for reconstructing GRNs. Optimal transport, a classical mathematical framework that minimize transportation costs between distributions, has shown promise in multi-omics data integration and cell fate prediction. Utilizing OT, our method constructs mappings between consecutively sampled cells to form cell-level trajectories, which are given as input to a structural inference model that recovers the GRN from single-cell data. Through case studies in two synthetic datasets, we demonstrate the feasibility of our proposed method and its promising performance over eight state-of-the-art GRN inference methods.}
+}
+
+
+@inproceedings{wang-2024-sidec,
   abbr={ICLR},
   selected={true},
   title =    {Structural Inference with Dynamics Encoding and Partial Correlation Coefficients},
   author =       {Wang, Aoran and Pang, Jun},
-  booktitle=    {The Twelfth International Conference on Learning Representations },
+  booktitle=    {The Twelfth International Conference on Learning Representations},
   year =   {2024},
   pdf =    {https://openreview.net/pdf?id=TKnzPdyeJu},
   website =    {https://openreview.net/pdf?id=TKnzPdyeJu},
