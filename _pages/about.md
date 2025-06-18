@@ -8,11 +8,6 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>E03-0325-090</p>
-    <p>Maison du Nombre</p>
-    <p>6, avenue de la Fonte</p>
-    <p>L-4364 Esch-sur-Alzette</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
