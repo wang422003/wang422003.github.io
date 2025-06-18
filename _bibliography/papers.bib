@@ -1,5 +1,17 @@
 ---
 ---
+@inproceedings{wang-2025-sgsi,
+  abbr={ICML},
+  selected={true},
+  title =    {Guided Structural Inference: Leveraging Priors with Soft Gating Mechanisms},
+  author =       {Wang, Aoran and Dai, Xinnan and Pang, Jun},
+  booktitle =    {Proceedings of the 42rd International Conference on Machine Learning},
+  year =   {2025},
+  series =   {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  abstract =   {Existing methods for inferring latent relational structures struggle to integrate partial prior knowledge, such as known edges, node-degree constraints, and global sparsity, without destabilizing training or conflicting with probabilistic assumptions. We propose Soft-Gated Structural Inference (SGSI), a VAE framework that seamlessly incorporates domain constraints via (1) soft gating with learnable edge masks to preserve gradients, (2) cloning-clamping of deterministic edges to avoid distributional conflicts, and (3) adaptive regularization to balance data-driven learning with domain constraints. By excluding known edges from stochastic inference, SGSI reallocates capacity to uncertain interactions, optimizing the information bottleneck trade-off. Experiments on 16 datasets show SGSI improves edge recovery by up to 9% AUROC over baselines, scales to larger graphs (94.2% AUROC), and maintains stable training. SGSI bridges domain expertise with data-driven learning, enabling interpretable and robust structural discovery in dynamical systems.}
+}
+
 @inproceedings{wang2024sicsm,
   abbr={NeurIPS},
   selected={true},

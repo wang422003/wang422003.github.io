@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: I'm a PhD Student interested in structural inference with machine learning. Let's discover the interactions!
+subtitle: I'm a researcher interested in scientific discovery with AI. Let's discover the world!
 
 profile:
   align: right
@@ -19,10 +19,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD Student in computer science in the [Faculty of Science, Technology and Medicine](https://www.uni.lu/fstm-en/) at the [University of Luxembourg](https://www.uni.lu/en/) in Grand Duchy of Luxembourg.
+I am a researcher at the Shanghai AI Laboratory in Shanghai, China.
 
-My research is at the structural inference of dynamical systems with deep learning, which is at the interface of ODEs, Generative Models and Variational Methods. I am interested in helping researchers and machines to understand the interactions between the entities.
+My current research interests are: 1. multi-model models for scientific discovery; 2. formal reasoning and equation discovery; 3. structural inference of dynamical systems with deep learning. I am interested in helping researchers and machines to discover this fantastic world.
 
 If you are interested in collaboration opportunities, please contact me at
 
-**[aoran.wang@uni.lu](mailto: aoran.wang@uni.lu)**
+**[wangaoran@pjlab.org.cn](mailto: wangaoran@pjlab.org.cn)**
