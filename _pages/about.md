@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: I'm a researcher interested in scientific discovery with AI. Let's discover the world!
+subtitle: [ I'm a researcher interested in scientific discovery with AI. Let's discover the world! ]
 
 profile:
   align: right
