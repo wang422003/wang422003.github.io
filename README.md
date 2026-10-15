@@ -19,7 +19,11 @@ Images use their original files with responsive CSS, so ImageMagick is optional.
 - `_pages/about.md`: biography and contact information.
 - `_bibliography/papers.bib`: publications shared by the homepage, publications
   page, web CV, and generated PDF CV references.
+- `_data/publication_highlights.yml`: short research highlights for homepage
+  selected papers.
 - `_news/`: research announcements. Use `date_display` when only a year is known.
+  The homepage shows the latest three by default and lets readers expand older
+  items; adjust `news_limit` in `_config.yml` to change the preview count.
 - `_projects/`: project descriptions and links.
 - `_data/cv.yml`: web CV sections.
 - `_cv/`: editable LaTeX CV source and publication generator.

@@ -1,31 +1,32 @@
-          
-          <div class="news">
-            <h2>news</h2>
-            {% if site.news != blank -%} 
-            {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: max(10vw, 12rem)"{% endif %}>
-              <table class="table table-sm table-borderless">
-              {%- assign news = site.news | sort: "date" | reverse -%}
-              {% if site.news_limit %}
-              {% assign news_limit = site.news_limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %} 
-                <tr>
-                  <th scope="row" class="text-nowrap">{% if item.date_display %}{{ item.date_display }}{% else %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</th>
-                  <td>
-                    {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
-                  </td>
-                </tr>
-              {%- endfor %} 
-              </table>
-            </div>
-          {%- else -%} 
-            <p>No news so far...</p>
-          {%- endif %} 
-          </div>
+<div class="news">
+  <h2>news</h2>
+  {% if site.news != blank %}
+    {% assign news = site.news | sort: "date" | reverse %}
+    {% assign news_size = news | size %}
+    {% assign news_limit = site.news_limit | default: 3 %}
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% for item in news limit: news_limit %}
+          {% include news_row.html item=item %}
+        {% endfor %}
+      </table>
+    </div>
+    {% if news_size > news_limit %}
+      <details class="older-news">
+        <summary>
+          <span class="news-more-label">More news ({{ news_size | minus: news_limit }})</span>
+          <span class="news-less-label">Show less</span>
+        </summary>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless">
+            {% for item in news offset: news_limit %}
+              {% include news_row.html item=item %}
+            {% endfor %}
+          </table>
+        </div>
+      </details>
+    {% endif %}
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

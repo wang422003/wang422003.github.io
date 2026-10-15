@@ -29,6 +29,12 @@
         {%- else %}
           <!-- Title -->
           <div class="title">{{entry.title}}</div>
+          {% if page.permalink == '/' and entry.selected %}
+            {% assign research_highlight = site.data.publication_highlights[entry.key] %}
+            {% if research_highlight %}
+              <p class="research-highlight">{{ research_highlight | escape }}</p>
+            {% endif %}
+          {% endif %}
           <!-- Author -->
           <div class="author">
           {% if entry.selected %}

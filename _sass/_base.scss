@@ -116,6 +116,38 @@ blockquote {
   }
 }
 
+@media (max-width: 575.98px) {
+  .profile {
+    float: none !important;
+    width: 160px;
+    margin: 0 auto 1.25rem;
+
+    figure {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.news {
+  th {
+    width: 7rem;
+  }
+
+  .older-news {
+    summary {
+      width: fit-content;
+      margin-bottom: 0.75rem;
+      color: var(--global-theme-color);
+      cursor: pointer;
+    }
+
+    &[open] .news-more-label,
+    &:not([open]) .news-less-label {
+      display: none;
+    }
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
@@ -514,6 +546,11 @@ footer.sticky-bottom {
       }
       .title {
         font-weight: bolder;
+      }
+      .research-highlight {
+        margin: 0.25rem 0;
+        font-size: 0.95rem;
+        line-height: 1.45;
       }
       .author {
         a {
