@@ -1,6 +1,8 @@
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
-    <img class="repo-img-light w-100" alt="{{ include.username }}" src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&show_icons=true">
-    <img class="repo-img-dark w-100" alt="{{ include.username }}" src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&show_icons=true">
+<div class="repo p-2 w-100">
+  <a class="card hoverable text-decoration-none" href="https://github.com/{{ include.username }}">
+    <div class="card-body text-left">
+      <h3 class="card-title h5"><i class="fab fa-github" aria-hidden="true"></i> {{ include.username }}</h3>
+      <p class="card-text mb-0">Research code, datasets, and benchmarks on GitHub.</p>
+    </div>
   </a>
 </div>

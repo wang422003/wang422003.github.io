@@ -2,12 +2,12 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: On this page you can find some of my repositories.
+description: Research code, datasets, and benchmarks.
 nav: true
 nav_order: 3
 ---
 
-## GitHub users
+## GitHub profile
 
 {% if site.data.repositories.github_users %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
@@ -19,7 +19,7 @@ nav_order: 3
 
 ---
 
-## GitHub Repositories
+## Research repositories
 
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">

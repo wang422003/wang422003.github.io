@@ -1,0 +1,304 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+% \usepackage{xeCJK}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{needspace}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumePublicationItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \Needspace{6\baselineskip}
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \Needspace{7\baselineskip}
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.20in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemPublicationListStart}{\begin{itemize}[leftmargin=0.20in, label=$\circ$]}
+\newcommand{\resumeItemPublicationListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumePublicationSubHeadingListStart}{\begin{itemize}[leftmargin=0.40in, label=$\circ$, itemsep=4pt, parsep=0pt]}
+\newcommand{\resumePublicationSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aoran Wang} \\ \vspace{1pt}
+    \small +86-15921568513 $|$ \href{mailto:aaronaussh@gmail.com}{\underline{aaronaussh@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/aoran-wang-221240152/}{\underline{LinkedIn}} $|$
+    \href{https://wang422003.github.io}{\underline{Homepage}} \\
+    % University of Luxembourg, 6 Avenue de la Fonte, L-4364 Esch-sur-Alzette, Luxembourg %\\
+    %Internship Availability: April 1, 2024 - August 30, 2024.
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+% \vspace{5pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Luxembourg}{Esch-sur-Alzette, Luxembourg}
+      {PhD in Computer Science (Focus: Machine Learning for Dynamical Systems)}{Dec. 2020 -- Nov. 2024}
+    \resumeSubheading
+      {Karlsruhe Institute of Technology}{Karlsruhe, Germany}
+      {Master of Science (Major: Autonomous Driving); GPA: 3.9/4.0}{Oct. 2015 -- Sep. 2019}
+    \resumeSubheading
+      {Tongji University}{Shanghai, China}
+      {Bachelor of Engineering (Major: Structural Mechanics); GPA: 3.9/4.0}{Sep. 2011 -- Jun. 2015}
+  \resumeSubHeadingListEnd
+  
+%-----------RESEARCH INTERESTS-----------
+\section{Research Interests}
+\resumeItemListStart
+  \resumeItem{AI for Science and multimodal foundation models.}
+  \resumeItem{Scientific and formal reasoning, with an emphasis on equation discovery and visual-to-symbolic inference.}
+  \resumeItem{Structural inference and graph learning for dynamical systems.}
+\resumeItemListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{2pt}
+     \textbf{Languages}{: Python (advanced), C/C++ (advanced), HTML/CSS, MATLAB, Visual Basic, \LaTeX{}.} \\\vspace{2pt}
+     \textbf{Developer Tools}{: Linux, Git, Docker, Google Cloud Platform, VS Code, Visual Studio, PyCharm, Slurm.} \\\vspace{2pt}
+     \textbf{Libraries}{: PyTorch, TensorFlow, JAX, Scikit-Learn, Jupyter, pandas, NumPy, Matplotlib, CUDA.} \\\vspace{2pt}
+     \textbf{Techniques}{: Multimodal Models, Scientific Reasoning, Equation Discovery, Structural Inference, Graph Neural Networks, Variational Autoencoders, Active Learning, Generative Flow Networks, Dynamical Systems.} \\
+    }}
+ \end{itemize}
+% Publications are generated from ../_bibliography/papers.bib.
+\section{Publications}
+\input{publications}
+
+\section{Preprints}
+\input{preprints}
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Multimodal Models and Scientific Reasoning}}{\emph{2025 -- Present}}
+        \resumeItemListStart
+            \resumeItem{Research on scientific multimodal foundation models and native structural reasoning across scientific domains.}
+            \resumeItem{Visual-to-symbolic discovery of physical laws with \href{https://jiaaqiliu.github.io/VIPER-R1/}{\underline{VIPER-R1}}.}
+            \resumeItem{Physics reasoning evaluation with PhysUniBench and scientific instruction following with SciIF.}
+        \resumeItemListEnd
+        \vspace{2pt}
+
+        \resumeProjectHeading
+        {\textbf{LLM4EDUKG} $|$ \footnotesize\emph{Python, Git, Unix Shell, VS Code}}{\emph{Mar. 2024 -- Jun. 2024}}
+        \resumeItemListStart
+            \resumeItem{Curated four educational knowledge graphs with knowledge components and prerequisite relationships.}
+            \resumeItem{Evaluated pre-trained language models on prerequisite relationships and multi-hop reasoning.}
+            \resumeItem{Released the dataset, evaluation pipeline, and results via \href{https://github.com/ai-for-edu/Evaluating-Large-Language-Models-with-Educational-Knowledge-Graphs-on-Prerequisite-Relationships}{\underline{GitHub}} and the project \href{https://ai-for-edu.github.io/Evaluating-Large-Language-Models-with-Educational-Knowledge-Graphs-on-Prerequisite-Relationships/}{\underline{website}}.}
+          \resumeItemListEnd
+          \vspace{2pt}
+    
+        \resumeProjectHeading
+        {\textbf{StructInfer} $|$ \footnotesize\emph{Python, Slurm, Git, Unix Shell, VS Code}}{\emph{Dec. 2022 -- Apr. 2024}}
+        \resumeItemListStart
+            \resumeItem{Generated observational trajectories for dynamical systems across multiple scientific domains.}
+            \resumeItem{Evaluated 13 structural inference methods for accuracy, scalability, data efficiency, and robustness.}
+            \resumeItem{Released datasets, code, and benchmark results via \href{https://github.com/wang422003/Benchmarking-Structural-Inference-Methods-for-Interacting-Dynamical-Systems}{\underline{GitHub}} and the project \href{https://structinfer.github.io/}{\underline{website}}.}
+          \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\vspace{2pt}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Shanghai AI Laboratory}{Shanghai, China}
+      {Researcher}{May 2025 -- Present}
+        \resumeItemListStart
+          \resumeItem{Conduct research in AI for Science, focusing on multimodal models and scientific reasoning.}
+          \resumeItem{Investigate equation discovery, visual-to-symbolic reasoning, and structural inference of dynamical systems.}
+          \resumeItem{Contribute to scientific foundation models, native structural reasoning, and physics reasoning benchmarks.}
+        \resumeItemListEnd
+\vspace{4pt} 
+    \resumeSubheading
+      {Squirrel AI}{Hybrid: Shanghai and remote}
+      {Research Intern}{Feb. 2024 -- Apr. 2025}
+      \resumeItemListStart
+        \resumeItem{Developed recommendation models for K-12 education using spatiotemporal graphs and integrated databases.}
+        \resumeItem{Addressed missing educational records using spatiotemporal similarities.}
+        \resumeItem{Led LLM4EDUKG to evaluate large language model reasoning on educational knowledge graphs.}
+        \resumeItem{Investigated GraphRAG for incorporating domain knowledge into LLMs and simulated student behavior.}
+    \resumeItemListEnd
+\vspace{4pt}    
+    \resumeSubheading
+      {University of Luxembourg}{Esch-sur-Alzette, Luxembourg}
+      {Doctoral Researcher (PhD Student)}{Dec. 2020 -- Nov. 2024}
+      \resumeItemListStart
+        \resumeItem{Researched deep learning methods for structural inference in dynamical systems.}
+        \resumeItem{Developed StructInfer, an open benchmark for reproducible evaluation across scientific domains.}
+        \resumeItem{Published at NeurIPS, ICML, and ICLR, and reviewed submissions for leading AI conferences.}
+      \resumeItemListEnd
+\vspace{4pt}
+
+    \resumeSubheading
+      {Karlsruhe Institute of Technology}{Karlsruhe, Germany}
+      {Student Assistant}{Dec. 2019 -- Mar. 2020}
+      \resumeItemListStart
+        \resumeItem{Developed monocular visual localization methods using graph neural networks and OpenCV.}
+        \resumeItem{Published visual localization research in a peer-reviewed conference.}
+        \resumeItem{Investigated hierarchical and combinatorial approaches to visual localization.}
+      \resumeItemListEnd
+      
+\vspace{4pt}
+    \resumeSubheading
+      {Robert Bosch GmbH}{Renningen, Germany}
+      {Research Intern}{Apr. 2018 -- Aug. 2018}
+      \resumeItemListStart
+        \resumeItem{Delivered an AUTOSAR tutorial and communicated the work to the research team and director.}
+        \resumeItem{Developed an extended Kalman filter diagnosis system for the electric propulsion of an autonomous vehicle prototype.}
+        \resumeItem{Explored AI methods for diagnostics in autonomous driving.}
+    \resumeItemListEnd
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------REWARDS-----------
+\section{Honors and Awards}
+ % \begin{itemize}[leftmargin=0.15in, label={}]
+ %    \small{\item{
+ %    \vspace{2pt}
+ %     Won the title of College-level Excellence from 2011 to 2015 \\\vspace{3pt}
+ %     Outstanding Graduates of Tongji University in 2015 \\\vspace{3pt}
+ %     Travel Grant Obtained: NeurIPS2022, ICML2023, ICLR2024
+ %    }}
+ % \end{itemize}
+\vspace{3pt}
+\resumeItemListStart
+    \resumeItem{College-level Excellence, 2011-2015}\vspace{-3pt}
+    \resumeItem{Outstanding Graduates of Tongji University, 2015}\vspace{-3pt}
+    \resumeItem{Travel Grant, NeurIPS 2022, ICML 2023, ICLR 2024}\vspace{-3pt}
+    \resumeItem{Top Reviewer, NeurIPS 2023, NeurIPS 2024}\vspace{-3pt}
+    \resumeItem{DAAD AInet Fellow}
+\resumeItemListEnd
+%-----------INTERESTS-----------
+\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{2pt}
+     \textbf{Indoor Sports}{: Fitness, Badminton, Table Tennis.} \\\vspace{3pt}
+     \textbf{Outdoor Sports}{: Snorkeling, Sky Diving, Hiking, Skiing, Surfing.} \\\vspace{3pt}
+     \textbf{Arts}{: Photography, Classical Music, Jazz Music.}     
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

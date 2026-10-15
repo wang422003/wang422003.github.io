@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Some cherry-picked projects I've been involved in
+description: Selected projects in AI for Science, multimodal models, and scientific reasoning.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 

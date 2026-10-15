@@ -5,3 +5,14 @@ github_repos:
   - ai-for-edu/Evaluating-Large-Language-Models-with-Educational-Knowledge-Graphs-on-Prerequisite-Relationships
   - wang422003/Benchmarking-Structural-Inference-Methods-for-Interacting-Dynamical-Systems
   - wang422003/SIDEC_torch
+
+github_repo_details:
+  ai-for-edu/Evaluating-Large-Language-Models-with-Educational-Knowledge-Graphs-on-Prerequisite-Relationships:
+    title: LLM4EDUKG
+    description: Evaluating language models on prerequisite relationships and multi-hop reasoning in educational knowledge graphs.
+  wang422003/Benchmarking-Structural-Inference-Methods-for-Interacting-Dynamical-Systems:
+    title: StructInfer
+    description: Benchmark code and datasets for structural inference in interacting dynamical systems.
+  wang422003/SIDEC_torch:
+    title: SIDEC
+    description: Structural inference with dynamics encoding and partial correlation coefficients. ICLR 2024.

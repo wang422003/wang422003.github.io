@@ -3,9 +3,9 @@
             <h2>news</h2>
             {% if site.news != blank -%} 
             {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
+            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: max(10vw, 12rem)"{% endif %}>
               <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%}
+              {%- assign news = site.news | sort: "date" | reverse -%}
               {% if site.news_limit %}
               {% assign news_limit = site.news_limit %}
               {% else %}
@@ -13,7 +13,7 @@
               {% endif %}
               {% for item in news limit: news_limit %} 
                 <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <th scope="row" class="text-nowrap">{% if item.date_display %}{{ item.date_display }}{% else %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</th>
                   <td>
                     {% if item.inline -%} 
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}

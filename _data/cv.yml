@@ -3,10 +3,21 @@
   contents:
     - name: Name
       value: Aoran Wang
+    - name: Position
+      value: Researcher
+    - name: Affiliation
+      value: Shanghai AI Laboratory, Shanghai, China
     - name: Languages
       value: Chinese (Native), English (B2), German (C1)
     - name: Pronouns
       value: He/Him
+
+- title: Research Interests
+  type: list
+  contents:
+    - AI for Science and multimodal foundation models.
+    - Scientific and formal reasoning, with an emphasis on equation discovery and visual-to-symbolic inference.
+    - Structural inference and graph learning for dynamical systems.
 
 - title: Education
   type: time_table
@@ -37,6 +48,13 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Researcher
+      institution: Shanghai AI Laboratory, Shanghai, China
+      year: May 2025 - Present
+      description:
+        - Conduct research in AI for Science, focusing on multimodal models and scientific reasoning.
+        - Investigate equation discovery, visual-to-symbolic reasoning, and structural inference of dynamical systems.
+        - Contribute to scientific foundation models, native structural reasoning, and physics reasoning benchmarks.
     - title: Graduate Assistant for Autonomous Driving
       institution: Karlsruhe Institute of Technology, Germany
       year: 2020 
@@ -56,15 +74,21 @@
 - title: Projects
   type: time_table
   contents:
-    - title: Structural Inference (AI4Science)
-      year: 2020 - now
+    - title: Multimodal Models and Scientific Reasoning
+      year: 2025 - Present
       description:
-        - Structure inference of dynamcial systems from observational trajectories.
-        - Dealing with real-world challenge such as data irregularity and incomplete observations.
-        - Created StructInfer, a pioneering open benchmark for evaluating structural inference methods across disciplines, ensuring objectivity and reproducibility.
-        - Published research at premier AI conferences including NeurIPS 2022, ICML 2023, and ICLR 2024, and contributed as a reviewer at leading AI venues.
+        - Research on scientific multimodal foundation models and native structural reasoning across scientific domains.
+        - Visual-to-symbolic discovery of physical laws with VIPER-R1.
+        - Physics reasoning evaluation with PhysUniBench and scientific instruction following with SciIF.
+    - title: Structural Inference (AI4Science)
+      year: 2020 - Present
+      description:
+        - Structural inference of dynamical systems from observational trajectories.
+        - Methods that handle irregular sampling, incomplete observations, and partial prior knowledge.
+        - Developed StructInfer, an open benchmark for evaluating structural inference methods across disciplines.
+        - Research includes SICSM, SGSI, and generative flow network approaches to structural inference.
     - title: AI4EDU
-      year: 2024 - Now
+      year: 2024 - Present
       description:
         - Developed models for recommendation systems using spatio-temporal graphs, enhancing them with integrated database solutions.
         - Innovated techniques for addressing missing data issues by leveraging spatio-temporal similarities.
@@ -73,7 +97,7 @@
 - title: Academic Services
   type: list
   contents:
-    - Conferece Reviewer - ICML2022, SPIGM@ICML2023, NeurIPS2023, ICLR2024, ICML2024, IJCAI2024, AI4Science@ICML2024, ML4LMS@ICML2024, NeurIPS2024, NeurIPS2024 D&B Track
+    - Conference Reviewer - ICML2022, SPIGM@ICML2023, NeurIPS2023, ICLR2024, ICML2024, IJCAI2024, AI4Science@ICML2024, ML4LMS@ICML2024, NeurIPS2024, NeurIPS2024 D&B Track
 
 - title: Honors and Awards
   type: time_table
@@ -87,4 +111,6 @@
     - year: 2015
       items:
         - Bachelor Graduation with Honors
-  
+
+- title: Publications
+  type: publications

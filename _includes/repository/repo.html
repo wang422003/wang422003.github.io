@@ -1,14 +1,11 @@
 {% assign repo_url =  include.repository | split: '/' %}
-
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
-{% else %}
-  {% assign show_owner = true %}
-{% endif %}
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img class="repo-img-light w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url.first }}&repo={{ repo_url.last }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}">
-    <img class="repo-img-dark w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url.first }}&repo={{ repo_url.last }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}">
+{% assign details = site.data.repositories.github_repo_details[include.repository] %}
+<div class="repo p-2 w-100">
+  <a class="card hoverable text-decoration-none" href="https://github.com/{{ include.repository }}">
+    <div class="card-body text-left">
+      <h3 class="card-title h5"><i class="fab fa-github" aria-hidden="true"></i> {{ details.title | default: repo_url.last }}</h3>
+      {% if details.description %}<p class="card-text">{{ details.description }}</p>{% endif %}
+      <small>{{ repo_url.first }} / {{ details.title | default: repo_url.last }}</small>
+    </div>
   </a>
 </div>

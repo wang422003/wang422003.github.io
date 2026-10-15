@@ -6,17 +6,20 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Aoran
 middle_name: 
 last_name: Wang
-email: aoran.wang@uni.lu
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+email: aaronaussh@gmail.com
+description: >
+  Aoran Wang, researcher at Shanghai AI Laboratory, working on AI for Science,
+  multimodal models, and scientific reasoning.
 
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: Aoran Wang, AI for Science, multimodal models, scientific reasoning, structural inference
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🚀 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://wang422003.github.io # the base hostname & protocol for your site
+baseurl: "" # User site hosted at the domain root.
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -100,7 +103,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 
 contact_note: >
-  Please contact me via my academic email or LinkedIn.
+  Please contact me via email or LinkedIn.
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
@@ -115,17 +118,17 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name:
+blog_nav_title:
+blog_description:
 permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname:
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -187,8 +190,18 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - output
+  - tmp
+  - _posts
+  - blog
+  - _pages/dropdown.md
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
 keep_files:
-  - CNAME
   - .nojekyll
   - .git
 
@@ -228,7 +241,7 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: []
   layouts:
     year: archive-year
     tag: archive-tag
@@ -282,7 +295,7 @@ more_authors_animation_delay: 1  # more authors are revealed on click using anim
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: true # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # Use original images with responsive CSS; no missing WebP variants.
   widths:
     - 480
     - 800

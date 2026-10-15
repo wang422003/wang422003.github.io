@@ -14,10 +14,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a researcher at the Shanghai AI Laboratory in Shanghai, China.
+I am a researcher at Shanghai AI Laboratory, working on AI for Science.
 
-My current research interests are: 1. multi-model models for scientific discovery; 2. formal reasoning and equation discovery; 3. structural inference of dynamical systems with deep learning. I am interested in helping researchers and machines to discover this fantastic world.
+My research focuses on multimodal models and scientific reasoning, with particular interests in equation discovery and structural inference of dynamical systems.
 
 If you are interested in collaboration opportunities, please contact me at
 
-**[wangaoran@pjlab.org.cn](mailto: wangaoran@pjlab.org.cn)**
+**[{{ site.email }}](mailto:{{ site.email }})**
