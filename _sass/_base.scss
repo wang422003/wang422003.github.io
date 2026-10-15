@@ -523,9 +523,12 @@ footer.sticky-bottom {
               text-decoration: none;
           }
         }
-        > em {
+        > em, .self-author {
           border-bottom: 1px solid;
           font-style: normal;
+        }
+        .self-author {
+          font-weight: 700;
         }
         > button.more-authors {
           display: inline-block;

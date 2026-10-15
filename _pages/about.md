@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: [ I'm a researcher interested in scientific discovery with AI. Let's discover the world! ]
+subtitle: AI for Science · Multimodal Models · Scientific Reasoning
 
 profile:
   align: right
@@ -21,3 +21,12 @@ My research focuses on multimodal models and scientific reasoning, with particul
 If you are interested in collaboration opportunities, please contact me at
 
 **[{{ site.email }}](mailto:{{ site.email }})**
+
+{% assign cv_page = site.pages | where: "permalink", "/cv/" | first %}
+<p class="profile-links">
+  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+  <span aria-hidden="true">·</span>
+  <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+  <span aria-hidden="true">·</span>
+  <a href="{{ cv_page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" download>PDF CV</a>
+</p>

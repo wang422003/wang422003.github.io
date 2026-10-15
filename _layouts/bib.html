@@ -31,6 +31,9 @@
           <div class="title">{{entry.title}}</div>
           <!-- Author -->
           <div class="author">
+          {% if entry.selected %}
+            {% include selected_authors.html authors=entry.author_array key=entry.key %}
+          {% else %}
           {% assign author_array_size = entry.author_array | size %}
 
           {% assign author_array_limit = author_array_size %}
@@ -106,7 +109,7 @@
                 "
             >{{more_authors_hide}}</button>
           {%- endif -%}
-
+          {% endif %}
           </div>
 
           <!-- Journal/Book title and date -->
