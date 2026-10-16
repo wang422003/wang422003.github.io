@@ -1,0 +1,5 @@
+---
+import data from "../../.cache/site.json";
+---
+<div class="news-list">{data.news.slice(0,3).map(item=><div class="news-item"><time>{item.label}</time><div set:html={item.html}/></div>)}</div>
+<details class="older-news"><summary>More news <span>({data.news.length-3})</span></summary><div class="news-list">{data.news.slice(3).map(item=><div class="news-item"><time>{item.label}</time><div set:html={item.html}/></div>)}</div></details>

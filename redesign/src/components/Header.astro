@@ -1,0 +1,23 @@
+---
+import {navigation} from "../config";
+import Icon from "./Icon.astro";
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="content-container header-inner">
+    <a href="/" class="site-logo" aria-label="Aoran Wang home">aw<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation"><span>Menu</span><Icon name="menu"/></button>
+    <nav id="main-navigation" aria-label="Main navigation">
+      {navigation.map(item => <a href={item.href} aria-current={path === item.href ? "page" : undefined}>{item.label}</a>)}
+      <a href="mailto:aaronaussh@gmail.com" class="nav-contact">Say hello <Icon size={14}/></a>
+    </nav>
+  </div>
+</header>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>(".menu-toggle");
+  toggle?.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(open));
+    document.querySelector("#main-navigation")?.classList.toggle("is-open", open);
+  });
+</script>

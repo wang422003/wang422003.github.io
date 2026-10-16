@@ -1,0 +1,7 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import data from "../../../.cache/site.json";
+export function getStaticPaths(){ return data.projects.map(project=>({params:{slug:project.slug},props:{project}})); }
+const {project} = Astro.props;
+---
+<BaseLayout title={project.title} description={project.description}><article class="content-container page-content project-detail"><a class="back-link" href="/projects/">← All projects</a><header class="page-heading"><p class="eyebrow">RESEARCH / PROJECT</p><h1>{project.title}</h1><p>{project.description}</p></header><figure class="project-detail-image"><img src={project.image} alt={project.title + " research overview"}/></figure><div class="prose" set:html={project.html}/></article></BaseLayout>

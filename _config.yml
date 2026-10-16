@@ -186,6 +186,7 @@ exclude:
   - vendor
   - output
   - tmp
+  - redesign
   - _posts
   - blog
   - _pages/dropdown.md

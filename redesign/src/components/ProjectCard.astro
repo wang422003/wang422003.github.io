@@ -1,0 +1,15 @@
+---
+import Icon from "./Icon.astro";
+const {project, index = 0} = Astro.props;
+const href = "/projects/" + project.slug + "/";
+const covers: Record<string, string> = {
+  "viper-r1": "/assets/img/projects/viper-r1-cover.svg",
+  "physunibench": "/assets/img/projects/physunibench-cover.svg",
+  "scientific-multimodal": "/assets/img/projects/scientific-multimodal-cover.svg",
+};
+const cover = covers[project.slug] || project.image;
+---
+<article class="project-card">
+  <a href={href} class="project-image-link" tabindex="-1" aria-hidden="true"><img src={cover} alt="" width="640" height="340" loading="lazy"/><span class="project-index">0{index + 1}</span></a>
+  <div class="project-card-content"><p class="eyebrow">{project.order < 4 ? "AI FOR SCIENCE" : "RESEARCH & BENCHMARKS"}</p><h3><a href={href}>{project.title}<Icon/></a></h3><p>{project.description}</p><a href={href} class="text-link">Explore project <span aria-hidden="true">↗</span></a></div>
+</article>

@@ -1,0 +1,20 @@
+# Search names for papers whose formal titles may not contain the project name.
+# Keys match _bibliography/papers.bib. Hyphens, spaces, and case are normalized.
+liu2026viper:
+  - VIPER-R1
+  - PhysSymbol
+tang2026native_structural_reasoning:
+  - SciReasoner
+bai2025interns1:
+  - Intern-S1
+wang2025physunibench:
+  - PhysUniBench
+  - PhysUniBenchmark
+wang2024benchmarking:
+  - StructInfer
+wang2024sicsm:
+  - SICSM
+wang-2025-sgsi:
+  - SGSI
+wang-2024-sidec:
+  - SIDEC

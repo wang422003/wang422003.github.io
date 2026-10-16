@@ -19,32 +19,6 @@
     - Scientific and formal reasoning, with an emphasis on equation discovery and visual-to-symbolic inference.
     - Structural inference and graph learning for dynamical systems.
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD in Computer Science
-      institution: Faculty of Science, Technology and Medicine, University of Luxembourg, Luxembourg
-      year: 2024
-      description:
-        - Structural Inference for Dynamical Systems
-        - Network Science
-        - Graph Theory
-        - Supervised by Prof. Jun Pang
-    - title: Master of Science (MSc)
-      institution: Karlsruhe Institute of Technology, Germany
-      year: 2019
-      description:
-        - Cognitive Systems
-        - Autonomous Driving
-    - title: Bachelor of Engineering (BEng)
-      institution: Tongji University, China
-      year: 2015
-      description:
-        - Mechanics and Dynamics
-        - Vehicle Engineering
-        - Graduated with Honors
-
-
 - title: Experience
   type: time_table
   contents:
@@ -69,6 +43,32 @@
         - Organized and delivered a tutorial on AUTOSAR for the research team, initiated communication with the director.
         - Pioneered the development of a diagnosis system using an extended Kalman filter for an autonomous electric vehicle prototype’s electric propulsion system.
         - Explored the integration of modern AI methods into self-driving cars for diagnostic purposes.
+
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computer Science
+      institution: Faculty of Science, Technology and Medicine, University of Luxembourg, Luxembourg
+      year: 2024
+      description:
+        - Structural Inference for Dynamical Systems
+        - Network Science
+        - Graph Theory
+        - Supervised by Prof. Jun Pang
+    - title: Master of Science (MSc)
+      institution: Karlsruhe Institute of Technology, Germany
+      year: 2019
+      description:
+        - Cognitive Systems
+        - Autonomous Driving
+    - title: Bachelor of Engineering (BEng)
+      institution: Tongji University, China
+      year: 2015
+      description:
+        - Mechanics and Dynamics
+        - Vehicle Engineering
+        - Graduated with Honors
 
 
 - title: Projects

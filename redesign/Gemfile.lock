@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bibtex-ruby (6.1.0)
+      latex-decode (~> 0.0)
+      racc (~> 1.7)
+    kramdown (2.4.0)
+      rexml
+    latex-decode (0.4.0)
+    racc (1.8.1)
+    rexml (3.3.8)
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  bibtex-ruby (= 6.1.0)
+  kramdown (= 2.4.0)
+
+BUNDLED WITH
+   2.5.20

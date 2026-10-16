@@ -1,0 +1,10 @@
+---
+import {author} from "../config";
+import Icon from "./Icon.astro";
+---
+<footer class="site-footer">
+  <div class="content-container">
+    <div class="footer-top"><div><p class="eyebrow">GOOD QUESTIONS START CONVERSATIONS</p><h2>Let’s discover<br/><em>something together.</em></h2></div><a href={"mailto:" + author.email} class="footer-email">{author.email}<Icon/></a></div>
+    <div class="footer-bottom"><span>© {new Date().getFullYear()} Aoran Wang</span><div><a href={author.scholar}>Scholar</a><a href={author.github}>GitHub</a><a href={author.orcid}>ORCID</a><a href="/life/">Life</a></div><span class="theme-credit">Built with <a href="https://github.com/MaxwelsDonc/astro-academic">astro-academic</a></span></div>
+  </div>
+</footer>

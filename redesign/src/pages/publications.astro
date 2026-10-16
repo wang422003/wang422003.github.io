@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Publication from "../components/Publication.astro";
+import data from "../../.cache/site.json";
+const years = [...new Set(data.papers.map(p=>p.year))].sort((a,b)=>b-a);
+---
+<BaseLayout title="Research"><div class="content-container page-content"><header class="page-heading"><p class="eyebrow">RESEARCH / PUBLICATIONS</p><h1>Questions.<br/><em>Methods. Discoveries.</em></h1><p>Work on scientific multimodal models, equation discovery, and structural inference.</p></header><div class="research-tools"><label class="search-field" for="paper-search"><span>Find a paper</span><input type="search" id="paper-search" placeholder="Search title, acronym, or author…" /></label><label for="paper-status"><span>Status</span><select id="paper-status"><option value="">All work</option><option>Published</option><option>Accepted</option><option>Preprint</option></select></label><p id="paper-count" role="status">{data.papers.length} publications</p></div><div id="paper-groups">{years.map(year=><section class="year-group"><h2>{year}</h2><div>{data.papers.filter(p=>p.year===year).map(paper=><Publication paper={paper}/>)}</div></section>)}</div><p id="no-papers" class="empty-search" hidden>No papers match this search.</p></div></BaseLayout>
+<script>
+  import {matchesPublicationSearch} from "../lib/publication-search.mjs";
+  const search = document.querySelector<HTMLInputElement>("#paper-search");
+  const status = document.querySelector<HTMLSelectElement>("#paper-status");
+  function filterPapers() {
+    let count = 0;
+    document.querySelectorAll<HTMLElement>("[data-publication]").forEach(paper => {
+      const visible = matchesPublicationSearch(paper.dataset.search || "", search?.value || "") && (!status?.value || paper.dataset.status === status.value);
+      paper.hidden = !visible; if(visible) count++;
+    });
+    document.querySelectorAll<HTMLElement>(".year-group").forEach(group => {group.hidden = !group.querySelector("[data-publication]:not([hidden])");});
+    const countEl = document.querySelector("#paper-count"); if(countEl) countEl.textContent = count + (count === 1 ? " publication" : " publications");
+    const empty = document.querySelector<HTMLElement>("#no-papers"); if(empty) empty.hidden = count > 0;
+  }
+  search?.addEventListener("input",filterPapers); status?.addEventListener("change",filterPapers);
+</script>

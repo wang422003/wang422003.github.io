@@ -1,0 +1,6 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import data from "../../.cache/site.json";
+const details:Record<string,{title:string;description:string}> = data.repositories.github_repo_details;
+---
+<BaseLayout title="Code & Data"><div class="content-container page-content"><header class="page-heading"><p class="eyebrow">RESEARCH / OPEN SOURCE</p><h1>Built to<br/><em>be explored.</em></h1><p>Research code, datasets, and benchmarks.</p></header><div class="repository-list">{data.repositories.github_repos.map(repo=><a href={"https://github.com/"+repo}><span class="eyebrow">{repo.split("/")[0]}</span><h2>{details[repo]?.title || repo.split("/")[1]} <span aria-hidden="true">↗</span></h2><p>{details[repo]?.description}</p></a>)}</div></div></BaseLayout>

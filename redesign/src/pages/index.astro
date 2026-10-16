@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import Publication from "../components/Publication.astro";
+import News from "../components/News.astro";
+import Icon from "../components/Icon.astro";
+import {author} from "../config";
+import data from "../../.cache/site.json";
+---
+<BaseLayout>
+  <section class="hero"><div class="content-container hero-inner">
+    <div class="hero-copy"><p class="eyebrow hero-eyebrow"><span class="status-dot"></span> RESEARCHER · SHANGHAI AI LABORATORY</p><h1>Aoran <em>Wang.</em></h1><p class="hero-statement">Thinking across modalities.<br/>Reasoning about science.</p><p class="hero-description">I work on AI for Science, with a focus on multimodal models and scientific reasoning — from equation discovery to the structure of dynamical systems.</p><div class="hero-actions"><a class="button button-primary" href="/publications/">Explore research <Icon name="right"/></a><a class="button button-secondary" href={author.cv} download>PDF CV <Icon name="download" size={17}/></a></div><div class="hero-social"><a href={author.scholar}>Google Scholar <Icon size={12}/></a><a href={author.github}>GitHub <Icon size={12}/></a><a href={"mailto:"+author.email}>Email <Icon size={12}/></a></div></div>
+    <div class="hero-visual"><div class="portrait-orbit" aria-hidden="true"><span></span><span></span><span></span></div><div class="portrait-frame"><img src="/assets/img/profile-scholar.jpg" alt="Aoran Wang" width="256" height="256" fetchpriority="high"/></div><div class="portrait-caption"><span class="little-star" aria-hidden="true">✳</span><p>From observations<br/><em>to understanding.</em></p></div></div>
+  </div><div class="content-container"><div class="research-ribbon"><span>AI for Science</span><span aria-hidden="true">✳</span><span>Multimodal models</span><span aria-hidden="true">✳</span><span>Scientific reasoning</span></div></div></section>
+  <section class="news-section" id="news" aria-labelledby="news-heading">
+    <div class="content-container compact-news">
+      <header class="compact-news-heading"><p class="eyebrow">01 / NEWS & MILESTONES</p><h2 id="news-heading">Recently.</h2></header>
+      <div class="compact-news-content"><News/></div>
+    </div>
+  </section>
+  <Section id="selected-publications" number="02" title="Ideas, put to paper." subtitle="SELECTED PUBLICATIONS" link="/publications/" linkLabel="All publications"><div class="featured-publications">{data.papers.filter(p=>p.selected).map(paper=><Publication paper={paper} featured/>)}</div></Section>
+  <Section id="selected-projects" number="03" title="A few things I’m working on." subtitle="SELECTED PROJECTS" link="/projects/" linkLabel="All projects"><div class="project-grid">{data.projects.slice(0,3).map((project,index)=><ProjectCard project={project} index={index}/>)}</div></Section>
+  <section class="life-invitation"><div class="content-container life-invitation-inner"><span class="little-star" aria-hidden="true">✳</span><div><p class="eyebrow">A LITTLE BEYOND RESEARCH</p><h2>Life, off the page.</h2><p>A place for photographs, small moments, and the occasional note.</p></div><a class="button button-secondary" href="/life/">Take a look <Icon name="right"/></a></div></section>
+</BaseLayout>

@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+# Only the content bridge runs in Astro CI; the legacy Jekyll gems stay separate.
+gem "bibtex-ruby", "6.1.0"
+gem "kramdown", "2.4.0"

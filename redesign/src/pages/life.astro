@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
+import {lifeEntries} from "../data/life";
+const photos = lifeEntries.filter(entry=>entry.image);
+const notes = lifeEntries.filter(entry=>!entry.image);
+---
+<BaseLayout title="Life & Moments" description="A quieter corner for photographs, small moments, and personal notes."><div class="content-container page-content life-page"><header class="page-heading life-heading"><p class="eyebrow"><span class="status-dot"></span> THE OTHER SIDE OF THE NOTEBOOK</p><h1>Life, <em>off the page.</em></h1><p>A quieter corner for photographs, places, and the little things in between.</p><div class="life-category-labels"><span>Photographs</span><span aria-hidden="true">/</span><span>Small notes</span><span aria-hidden="true">/</span><span>Everyday moments</span></div></header>
+{photos.length > 0 ? <div class="photo-grid">{photos.map((entry,index)=><figure class="life-photo"><button class="photo-open" data-photo-index={index} data-src={entry.image} data-caption={entry.title + (entry.location ? " · " + entry.location : "")} aria-label={"View photograph: "+entry.title}><img src={entry.image} alt={entry.alt || entry.title} loading="lazy"/><span class="photo-expand"><Icon name="arrow"/></span></button><figcaption><span>{entry.title}</span><time datetime={entry.date}>{entry.date}</time>{entry.note && <p>{entry.note}</p>}</figcaption></figure>)}</div> : <section class="life-empty"><div class="empty-photo-art" aria-hidden="true"><span class="paper-frame frame-one"></span><span class="paper-frame frame-two"></span><div class="paper-frame frame-front"><Icon name="camera" size={38}/><span>A LITTLE MOMENT</span></div><span class="empty-art-star">✳</span></div><div class="life-empty-copy"><p class="eyebrow">A COLLECTION IN THE MAKING</p><h2>Leaving room<br/><em>for the everyday.</em></h2><p>I’m making a little space here for photographs and small stories. More soon.</p><span class="handwritten">To be continued…</span></div></section>}
+{notes.length > 0 && <section class="life-notes"><p class="eyebrow">FROM THE NOTEBOOK</p>{notes.map(entry=><article><time datetime={entry.date}>{entry.date}</time><h2>{entry.title}</h2><p>{entry.note}</p></article>)}</section>}
+<div class="life-page-end"><span aria-hidden="true">✳</span><p>Some things are worth pausing for.</p><a href="/" class="text-link">Back to research <span aria-hidden="true">↗</span></a></div>
+</div><dialog class="photo-dialog" aria-label="Photograph viewer"><button class="photo-close" aria-label="Close photograph"><Icon name="close"/></button><button class="photo-prev" aria-label="Previous photograph">←</button><figure><img alt=""/><figcaption></figcaption></figure><button class="photo-next" aria-label="Next photograph">→</button></dialog></BaseLayout>
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>(".photo-dialog");
+  const photos = Array.from(document.querySelectorAll<HTMLButtonElement>(".photo-open"));
+  let current = 0;
+  function showPhoto(index:number) {
+    if(!photos.length || !dialog) return;
+    current = (index + photos.length) % photos.length;
+    const source = photos[current];
+    const image = dialog.querySelector("img");
+    const caption = dialog.querySelector("figcaption");
+    if(image){image.src=source.dataset.src || "";image.alt=source.querySelector("img")?.alt || "";}
+    if(caption)caption.textContent=source.dataset.caption || "";
+    if(!dialog.open)dialog.showModal();
+  }
+  photos.forEach((photo,index)=>photo.addEventListener("click",()=>showPhoto(index)));
+  dialog?.querySelector(".photo-close")?.addEventListener("click",()=>dialog.close());
+  dialog?.querySelector(".photo-prev")?.addEventListener("click",()=>showPhoto(current-1));
+  dialog?.querySelector(".photo-next")?.addEventListener("click",()=>showPhoto(current+1));
+  dialog?.addEventListener("keydown",event=>{if(event.key==="ArrowLeft")showPhoto(current-1);if(event.key==="ArrowRight")showPhoto(current+1);});
+  dialog?.addEventListener("click",event=>{if(event.target===dialog)dialog.close();});
+</script>
