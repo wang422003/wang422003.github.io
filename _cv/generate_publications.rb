@@ -50,7 +50,13 @@ def venue(entry)
            when "CMSB" then "CMSB 2025 (LNCS)"
            when "ECML PKDD" then "ECML PKDD 2024 Workshops (CCIS)"
            else
-             track = entry[:booktitle].to_s.include?("Datasets and Benchmarks") ? " Datasets and Benchmarks Track" : ""
+             track = if entry[:booktitle].to_s.include?("Datasets and Benchmarks")
+                       " Datasets and Benchmarks Track"
+                     elsif entry[:booktitle].to_s.include?("Main Conference")
+                       ", Main Conference"
+                     else
+                       ""
+                     end
              "#{tex(abbr)} #{entry[:year]}#{track}"
            end
   end
